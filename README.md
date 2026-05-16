@@ -39,13 +39,11 @@ O projeto possui uma interface moderna e minimalista, utilizando uma estética f
 ## 📁 Estrutura do projeto
 
 ```bash
-Galeria de Filmes/
+cinetech-movie-gallery/
 │
-├── CineTech/
-│   ├── imagens/
-│   ├── index.html
-│   └── style.css
-│
+├── imagens/
+├── index.html
+├── style.css
 ├── preview.png
 └── README.md
 ```
@@ -68,4 +66,4 @@ Desenvolvido por Gustavo Brassaroto Lira.
 
 ## 🌐 GitHub
 
-https://github.com/Brassaroto/cinetech-movie-gallery
+[🔗 Acessar repositório](https://github.com/Brassaroto/cinetech-movie-gallery)
