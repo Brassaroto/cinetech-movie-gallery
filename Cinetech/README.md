@@ -39,11 +39,14 @@ O projeto possui uma interface moderna e minimalista, utilizando uma estética f
 ## 📁 Estrutura do projeto
 
 ```bash
-CineTech/
+Galeria de Filmes/
 │
-├── imagens/
-├── index.html
-├── style.css
+├── CineTech/
+│   ├── imagens/
+│   ├── index.html
+│   └── style.css
+│
+├── preview.png
 └── README.md
 ```
 
