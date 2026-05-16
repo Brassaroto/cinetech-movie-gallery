@@ -1,0 +1,179 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background:
+    radial-gradient(
+      circle at top center,
+      rgba(48, 213, 200, 0.1),
+      transparent 28%
+    ),
+    linear-gradient(135deg, #080808, #111111, #0b0b0b);
+
+  color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 75px 20px 42px;
+  border-bottom: 1px solid rgba(48, 213, 200, 0.14);
+}
+
+header h1 {
+  font-size: 58px;
+  color: #30d5c8;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-shadow: 0 0 18px rgba(48, 213, 200, 0.25);
+}
+
+header p {
+  font-size: 18px;
+  color: #cfd8dc;
+}
+
+/* INTRODUÇÃO */
+.introducao {
+  max-width: 780px;
+  margin: 38px auto 62px;
+  padding: 0 22px;
+  text-align: center;
+}
+
+.introducao h2 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.introducao h2::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 3px;
+  background: #30d5c8;
+  margin: 10px auto 0;
+  border-radius: 20px;
+}
+
+.introducao p {
+  font-size: 16px;
+  color: #b8c4c8;
+}
+
+/* GALERIA */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+  padding: 10px 30px 70px;
+}
+
+/* CARD */
+.card-filme {
+  width: 330px;
+  background: linear-gradient(145deg, #181818, #101010);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(48, 213, 200, 0.1);
+
+  box-shadow:
+    0 14px 36px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+  transition:
+    transform 0.35s,
+    border-color 0.35s,
+    box-shadow 0.35s;
+}
+
+/* HOVER */
+.card-filme:hover {
+  transform: translateY(-8px);
+  border-color: rgba(48, 213, 200, 0.42);
+  box-shadow:
+    0 20px 46px rgba(0, 0, 0, 0.65),
+    0 0 22px rgba(48, 213, 200, 0.1);
+}
+
+/* IMAGEM */
+.card-filme img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+  filter: contrast(1.04) brightness(0.94);
+}
+
+/* TÍTULO DOS FILMES */
+.card-filme h3 {
+  font-size: 24px;
+  color: #ffffff;
+  margin: 20px 20px 12px;
+  font-weight: 600;
+}
+
+/* TEXTOS */
+.card-filme p {
+  margin: 8px 20px;
+  color: #c8c8c8;
+  font-size: 14.5px;
+}
+
+/* DESTAQUES */
+.card-filme strong {
+  color: #30d5c8;
+}
+
+/* DESCRIÇÃO */
+.descricao {
+  color: #aeb8bb;
+  margin-bottom: 22px !important;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  border-top: 1px solid rgba(48, 213, 200, 0.14);
+  background: rgba(0, 0, 0, 0.18);
+}
+
+footer p {
+  color: #9fa9ad;
+  font-size: 14px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 44px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .introducao h2 {
+    font-size: 24px;
+  }
+
+  .card-filme {
+    width: 92%;
+  }
+
+  .card-filme img {
+    height: 430px;
+  }
+}
